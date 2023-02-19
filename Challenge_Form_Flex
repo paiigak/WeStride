@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgister From,</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: -20px 0 50px 0;
+        }
+
+        .form {
+            display: flex;
+            width: 768px;
+            height: 480px;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+
+        }
+
+        .sign-in {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+            padding: 0px 50px;
+
+        }
+
+        .sign-up {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            background-color: #ff4263;
+            padding: 0px 40px;
+        }
+
+        .your-name {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 20px;
+            width: 100%;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: #333333;
+            margin: 0px 10px;
+
+            background-color: black;
+            color: white;
+
+        }
+
+        .sign-up>h1 {
+            color: white;
+        }
+
+        h1 {
+            display: block;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            color: black;
+        }
+
+        .sign-in-text1 {
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            opacity: 0.5;
+        }
+
+        .email {
+            margin: 8px 0px;
+            padding-top: 12px;
+            padding-bottom: 15px;
+            padding-left: 12px;
+            width: 284px;
+            height: 40px;
+            background-color: #EEEEEE;
+            border: none;
+        }
+
+        .sign-in-text2 {
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            color: #333333;
+            opacity: 0.5;
+            margin: 15px 0px;
+        }
+
+        .sign-in>.sign-in-text2 {
+            cursor: pointer;
+        }
+
+        .sign-in-btn {
+            padding: 12px 45px;
+            background-color: #FF4B2B;
+            border: 1px solid #FF4B2B;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+        }
+
+        .sign-up>span {
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .sign-up>.sign-in-btn {
+            color: white;
+            background-color: #ff4263;
+            border: 1px solid white;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-clone">
+        <div class="form">
+            <div class="sign-in">
+                <h1>Sign in</h1>
+                <span class="sign-in-text1">Use your email</span>
+                <input class="email" type="text" placeholder="Email" />
+                <input class="email" type="password" placeholder="Password" />
+                <span class="sign-in-text2">Forgot your password?</span>
+                <button class="sign-in-btn"> SIGN IN</button>
+            </div>
+
+            <div class="sign-up">
+                <h1>Hello, Friend!</h1>
+                <span class="sign-in-text2">Enter your personal details and start journey with us</span>
+                <button class="sign-in-btn"> SIGN UP</button>
+            </div>
+        </div>
+    </div>
+    <div class="your-name"> Created by Your name</div>
+</body>
+
+</html>
