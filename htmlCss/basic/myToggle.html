@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML and CSS tutirial</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .switch {
+            width: 100px;
+            height: 50px;
+        }
+
+        input {
+            display: ;
+        }
+
+        .slider {
+            width: 100px;
+            height: 50px;
+            border-radius: 24px;
+            border: 2px solid gainsboro;
+            background-color: white;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 1px 1px black;
+        }
+
+        .slider::before {
+            display: block;
+            content: "";
+            width: 48px;
+            height: 48px;
+            margin-top: -2px;
+            margin-left: -1px;
+            border-radius: 50%;
+            border: 2px solid gainsboro;
+            background-color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input[type="checkbox"]:checked+.slider {
+            background-color: gray;
+            border-color: transparent;
+        }
+
+        input[type="checkbox"]:checked+.slider::before {
+            transform: translatex(90%);
+            border-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="switch">
+        <input type="checkbox" />
+        <div class="slider"></div>
+    </label>
+
+
+</body>
+
+</html>
